@@ -1,0 +1,43 @@
+.LogoBar {
+    background-color: #f5f5f5;
+    padding: 30px 0;
+}
+
+.LogoBar__wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.LogoBar__slider-content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.LogoBar__slider-slide {
+    padding: 0 20px;
+}
+
+.LogoBar__slider-slide img {
+    max-height: 40px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.LogoBar__slider-slide img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+@media screen and (min-width: 1220px) {
+    .LogoBar__slider-content {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}

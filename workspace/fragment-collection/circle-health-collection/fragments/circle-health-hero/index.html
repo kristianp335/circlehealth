@@ -1,0 +1,131 @@
+<style>
+.ch-hero-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 80vh;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+.ch-hero-text-column {
+  position: relative;
+  overflow: hidden;
+  padding: 4rem;
+}
+.ch-hero__gradient-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.ch-hero__text-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.ch-hero__image-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.ch-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ch-hero__title {
+  font-size: 3.5rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 1rem !important;
+  color: #182333 !important;
+}
+.ch-hero__subtitle {
+  font-size: 1.2rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 2.5rem !important;
+  max-width: 600px;
+  color: #555c65 !important;
+}
+.ch-hero__cta-group {
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 992px) {
+  .ch-hero-container {
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ch-hero__image-column { display: none; }
+  .ch-hero__text-column { padding: 2rem; }
+  .ch-hero__text-column .ch-hero__text-content { align-items: center; text-align: center; }
+  .ch-hero__title { font-size: 2.5rem !important; }
+  .ch-hero__subtitle { font-size: 1.1rem !important; }
+  .ch-hero__cta-group { justify-content: center; }
+}
+@media (max-width: 576px) {
+  .ch-hero__cta-group { flex-direction: column; width: 100%; max-width: 320px; }
+}
+</style><div 
+  class="ch-hero-container"
+  [#if configuration.imagePosition??]
+    data-image-position="${configuration.imagePosition}"
+  [/#if]
+>
+  <div 
+    class="ch-hero__text-column"
+    [#if configuration.textAlign??]
+      data-text-align="${configuration.textAlign}"
+    [/#if]
+  >
+    <div style="position: relative; width: 100%; height: 100%;">
+      <img src="[resources:gradient-background.svg]" class="ch-hero__gradient-bg" alt="" />
+      <div class="ch-hero__text-content">
+        <h2 
+          class="ch-hero__title" 
+          data-lfr-editable-id="heroTitle" 
+          data-lfr-editable-type="text"
+        >
+          Private healthcare that puts you first. Less waiting. More living.
+        </h2>
+        <h3 
+          class="ch-hero__subtitle" 
+          data-lfr-editable-id="heroSubtitle" 
+          data-lfr-editable-type="rich-text"
+        >
+          With thousands of specialists to choose from, we won't keep you waiting for the quality healthcare you deserve.
+        </h3>
+        <div 
+          class="ch-hero__cta-group" 
+          data-lfr-editable-id="heroButtons" 
+          data-lfr-editable-type="rich-text"
+        >
+          <a href="#" class="ch-btn ch-btn--primary">Find a specialist</a>
+          <a href="#" class="ch-btn ch-btn--secondary">Find a hospital</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ch-hero__image-column">
+    <img 
+      src="https://webserver-lctbootsopticians-prd.lfr.cloud/documents/d/circle-health-group/a_compassionate_nurse_or_doctor_" 
+      alt="A compassionate nurse or doctor providing care."
+      class="ch-hero__image"
+      data-lfr-editable-id="heroImage"
+			data-lfr-editable-type="image"
+      fetchpriority="high"
+      loading="eager"
+      width="600"
+      height="800"
+    />
+  </div>
+</div>

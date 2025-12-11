@@ -1,0 +1,11 @@
+{
+    "fragmentEntryKey": "ch-promo-cards",
+    "name": "Circle Health Promo Cards",
+    "type": "section",
+    "htmlPath": "index.html",
+    "cssPath": "index.css",
+    "jsPath": "index.js",
+    "configurationPath": "configuration.json",
+    "thumbnailPath": "thumbnail.png",
+  "icon": "cards"
+}

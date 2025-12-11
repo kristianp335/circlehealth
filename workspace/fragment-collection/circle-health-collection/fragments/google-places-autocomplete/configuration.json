@@ -1,0 +1,16 @@
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "googlePlacesApiKey",
+                    "label": "Google Places API Key",
+                    "description": "Enter the Google Places API key.",
+                    "type": "text",
+                    "dataType": "string",
+                    "defaultValue": ""
+                }
+            ]
+        }
+    ]
+}

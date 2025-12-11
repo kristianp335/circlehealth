@@ -1,0 +1,25 @@
+assemble:
+  - from: assets
+    into: static
+
+circle-health-global-css:
+    name: Circle Health Global CSS
+    type: globalCSS
+    url: global.css
+
+circle-health-non-critical-css:
+    name: Circle Health Non-Critical CSS
+    type: globalCSS
+    url: non-critical.css
+    linkElementAttributes:
+      media: "print"
+      onload: "this.onload=null;this.media='all'"
+
+circle-health-global-js:
+    name: Circle Health Global JS
+    type: globalJS
+    url: global.js
+    scriptElementAttributes:
+      async: true
+      data-senna-track: "permanent"
+      fetchpriority: "low"

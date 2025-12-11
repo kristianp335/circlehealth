@@ -1,0 +1,51 @@
+{
+    "fieldSets": [
+        {
+            "label": "Layout",
+            "fields": [
+                {
+                    "name": "textAlign",
+                    "label": "Text Alignment",
+                    "description": "Select the alignment for the text content.",
+                    "type": "select",
+                    "defaultValue": "center",
+                    "typeOptions": {
+                        "validValues": [
+                            {
+                                "value": "left",
+                                "label": "Left"
+                            },
+                            {
+                                "value": "center",
+                                "label": "Center"
+                            },
+                            {
+                                "value": "right",
+                                "label": "Right"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "imagePosition",
+                    "label": "Image Position",
+                    "description": "Select the position for the background image.",
+                    "type": "select",
+                    "defaultValue": "right",
+                    "typeOptions": {
+                        "validValues": [
+                            {
+                                "value": "left",
+                                "label": "Left"
+                            },
+                            {
+                                "value": "right",
+                                "label": "Right"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

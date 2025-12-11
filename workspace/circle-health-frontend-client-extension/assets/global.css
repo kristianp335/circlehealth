@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');
+
+#wrapper {
+    font-family: var(--ch-font-family, "Lato", sans-serif);
+    --ch-font-family: "Lato", sans-serif;
+    --ch-primary: #1899f5;
+    --ch-secondary: #0f5d95;
+    --ch-white: #fff;
+    --ch-light: #f7f8f9;
+    --ch-dark: #272833;
+    --ch-text: #3b3b3b;
+}

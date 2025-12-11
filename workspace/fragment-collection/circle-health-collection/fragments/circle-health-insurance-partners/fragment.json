@@ -1,0 +1,10 @@
+{
+    "fragmentEntryKey": "ch-insurance-partners",
+    "name": "Circle Health Insurance Partners",
+    "type": "section",
+    "htmlPath": "index.html",
+    "cssPath": "index.css",
+    "jsPath": "index.js",
+    "thumbnailPath": "thumbnail.png",
+    "icon": "share"
+}

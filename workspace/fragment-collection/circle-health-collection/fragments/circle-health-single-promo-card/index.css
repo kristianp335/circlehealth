@@ -1,0 +1,80 @@
+.ch-large-image {
+    margin: 4rem 0;
+    text-align: left;
+}
+
+.ch-large-image__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the single card within the flex container */
+    margin: 0;
+    padding: 0;
+    gap: 1.25rem;
+}
+
+.ch-large-image__tile {
+    border: 1px solid #c7cacc;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.4375rem 1.1875rem rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 540px; /* Add a max-width to prevent the card from becoming too wide */
+}
+
+.ch-large-image__tile-heading {
+    color: #000;
+    font-size: 1.375rem;
+    line-height: 1.3;
+    margin: 0 0 1rem;
+    padding: 1.8125rem 1.5625rem 0;
+}
+
+.ch-large-image__tile-subheading {
+    color: #757575;
+    display: block;
+}
+
+.ch-large-image__tile-desc {
+    color: #3b3b3b;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.ch-large-image__desc-content {
+    padding: 0 1.5625rem;
+}
+
+.ch-large-image__desc-content--cta {
+    margin-top: auto;
+    padding-bottom: 1.8125rem;
+}
+
+.ch-large-image__image {
+    aspect-ratio: 361/169;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.ch-large-image__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.f-btn-lighter-blue {
+    background-color: #a0d5fb;
+    border-color: #a0d5fb;
+    color: #000;
+}
+
+.f-btn-lighter-blue:hover {
+    background-color: #1899f5;
+    border-color: #1899f5;
+    color: #fff;
+}

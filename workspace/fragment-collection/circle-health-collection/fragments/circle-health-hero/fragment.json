@@ -1,0 +1,11 @@
+{
+  "fragmentEntryKey": "ch-hero",
+  "name": "Circle Health Hero",
+  "type": "section",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "index.js",
+  "configurationPath": "configuration.json",
+  "thumbnailPath": "thumbnail.png",
+  "icon": "picture"
+}

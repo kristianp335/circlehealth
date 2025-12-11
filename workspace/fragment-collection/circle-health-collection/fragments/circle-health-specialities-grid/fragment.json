@@ -1,0 +1,10 @@
+{
+    "fragmentEntryKey": "ch-specialities-grid",
+    "name": "Circle Health Specialities Grid",
+    "type": "section",
+    "htmlPath": "index.html",
+    "cssPath": "index.css",
+    "jsPath": "index.js",
+    "thumbnailPath": "thumbnail.png",
+    "icon": "grid"
+}

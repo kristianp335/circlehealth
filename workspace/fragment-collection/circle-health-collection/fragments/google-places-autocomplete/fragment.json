@@ -1,0 +1,9 @@
+{
+  "fragmentEntryKey": "google-places-autocomplete",
+  "name": "Google Places Autocomplete",
+  "type": "component",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "index.js",
+  "configurationPath": "configuration.json"
+}

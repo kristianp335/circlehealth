@@ -1,0 +1,9 @@
+{
+  "fragmentEntryKey": "circle-health-single-promo-card",
+  "name": "Circle Health Single Promo Card",
+  "type": "component",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "",
+  "configurationPath": "configuration.json"
+}
